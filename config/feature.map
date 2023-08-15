@@ -1,0 +1,5 @@
+name=user_id;group=0;embedding_dim=8;hash_bucket_size=10000
+name=user_occupation_text;group=1;embedding_dim=8;hash_bucket_size=10000
+name=user_zip_code;group=2;embedding_dim=8;hash_bucket_size=10000
+name=movie_id;group=3;embedding_dim=8;hash_bucket_size=10000
+name=movie_title;group=4;embedding_dim=8;hash_bucket_size=10000
