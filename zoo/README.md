@@ -1,9 +1,9 @@
-###代码结构
+###Code structure
 
-自监督数据增广，自监督对比，内生结构等模块抽象成为sub_task, 所有sub_task继承sub_task_base, sub_task类似keras layer
-，区别在于sub_task_base显式定义了loss接口和输出，sub_task好处在每个task可以单独测试和评估
+Modules such as self-supervised data augmentation, self-supervised comparison, and endogenous structures are abstracted into sub_task. All sub_tasks inherit sub_task_base, and sub_task is similar to keras layer.
+, the difference is that sub_task_base explicitly defines the loss interface and output, the benefit of sub_task is that each task can be tested and evaluated independently
 
-一个pipeline中所有sub_task构成一个有向无环图， 上游sub_task的输出可以下游sub_task的输入，整个pipeline由multi_task_assembler负责装配， 下面给出一个配置示例
+All sub_tasks in a pipeline form a directed acyclic graph. The output of the upstream sub_task can be the input of the downstream sub_task. The entire pipeline is assembled by multi_task_assembler. A configuration example is given below.
 
 ```python
 {
