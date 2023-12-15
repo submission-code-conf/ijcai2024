@@ -97,7 +97,7 @@ To run:
 
 1. **Setup**: Ensure that all required packages are installed. This includes TensorFlow, TensorFlow Datasets, and any other dependencies your project requires.
 
-2. **Data Preparation**: The script uses the Movielens 100K dataset, which will be automatically downloaded and processed when you run the script.
+2. **Data Preparation**: The script uses the Movielens 100K (or 1M) dataset, which will be automatically downloaded and processed when you run the script.
 
 3. **Configuration**: Modify the `decompose_config.json` file in the `config` directory as needed to tweak model parameters, feature processing, and other settings.
 
