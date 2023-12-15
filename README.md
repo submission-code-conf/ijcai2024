@@ -90,3 +90,51 @@ sub_task_names = ["query_ssl_augment", "item_ssl_augment", "ssl", "ltr"]
 }
 ```
 
+## How to Run 
+`decomposition_estimator.py` is an example script based on the Movielens 100K dataset, demonstrating the application of our Dual Feature Decomposition (DFD) approach in a recommender system setting. This script showcases how to preprocess data, construct a model pipeline, and evaluate the performance of the model. 
+
+To run:
+
+1. **Setup**: Ensure that all required packages are installed. This includes TensorFlow, TensorFlow Datasets, and any other dependencies your project requires.
+
+2. **Data Preparation**: The script uses the Movielens 100K dataset, which will be automatically downloaded and processed when you run the script.
+
+3. **Configuration**: Modify the `decompose_config.json` file in the `config` directory as needed to tweak model parameters, feature processing, and other settings.
+
+4. **Execution**: Run the script using the following command from the root directory of the project:
+
+
+当然，我可以为您提供一个使用 Markdown 格式的 README 文件示例，包括对 decomposition_estimator.py 文件的描述。在下面的示例中，我使用了 Markdown 的格式化特性，例如标题、子标题、代码块等，以提高文档的可读性和组织性。
+
+markdown
+Copy code
+# Causal Embedding with Dual Feature Decomposition for Addressing Exposure Bias in Recommender Systems
+
+## Overview
+Recommender systems often grapple with the challenge of exposure bias. This phenomenon arises when users predominantly interact with a narrow set of items (head items), leading to the misconception that non-exposed items (tail items) are of no interest to them. Our research introduces the **Dual Feature Decomposition (DFD)** approach to tackle this issue. By decomposing features into atomic and side features, we aim to provide more accurate and unbiased recommendations.
+
+## Key Features
+- **Dual Feature Decomposition**: Breaks down features into atomic (related to bias and unobserved factors) and side (observable without bias) features.
+- **Neural Network Mappings**: Designed to minimize the influence of the atomic space on side representations.
+- **Vertical Projection**: Applied to further reduce bias in recommendations.
+
+## Decomposition Estimator
+
+### Overview
+`decomposition_estimator.py` is an example script based on the Movielens 100K dataset, demonstrating the application of our **Dual Feature Decomposition (DFD)** approach in a recommender system setting. This script showcases how to preprocess data, construct a model pipeline, and evaluate the performance of the model.
+
+### How to Run
+To run the `decomposition_estimator.py` script:
+
+1. **Setup**: Ensure that all required packages are installed. This includes TensorFlow, TensorFlow Datasets, and any other dependencies your project requires.
+
+2. **Data Preparation**: The script uses the Movielens 100K dataset, which will be automatically downloaded and processed when you run the script.
+
+3. **Configuration**: Modify the `decompose_config.json` file in the `config` directory as needed to tweak model parameters, feature processing, and other settings.
+
+4. **Execution**: Run the script using the following command from the root directory of the project:
+'''
+python [path to project]/zoo/decomposition_estimator.py
+'''
+
+
