@@ -1,0 +1,5 @@
+name=User-ID;group=0;embedding_dim=8;hash_bucket_size=10000
+name=Location;group=1;embedding_dim=8;hash_bucket_size=10000
+name=ISBN;group=2;embedding_dim=8;hash_bucket_size=10000
+name=Title;group=3;embedding_dim=8;hash_bucket_size=10000
+name=Author;group=4;embedding_dim=8;hash_bucket_size=10000
