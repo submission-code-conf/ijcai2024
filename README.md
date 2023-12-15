@@ -91,7 +91,7 @@ sub_task_names = ["query_ssl_augment", "item_ssl_augment", "ssl", "ltr"]
 ```
 
 ## How to Run 
-`decomposition_estimator.py` is an example script based on the Movielens 100K dataset, demonstrating the application of our Dual Feature Decomposition (DFD) approach in a recommender system setting. This script showcases how to preprocess data, construct a model pipeline, and evaluate the performance of the model. 
+`./zoo/decomposition_estimator.py` is an example script based on the Movielens 100K dataset, demonstrating the application of our Dual Feature Decomposition (DFD) approach in a recommender system setting. This script showcases how to preprocess data, construct a model pipeline, and evaluate the performance of the model. 
 
 To run:
 
