@@ -82,7 +82,7 @@ def input_fn():
     # Loading and preprocessing the 100k MovieLens dataset
     ratings = tfds.load("movielens/100k-ratings", split="train[:80%]")
 
-    # or loading and preprocessing the 1M MovieLens dataset
+    # Or loading and preprocessing the 1M MovieLens dataset
     # ratings = tfds.load("movielens/1m-ratings", split="train[:80%]")
 
     def _label_trans(y):
