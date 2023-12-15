@@ -79,10 +79,10 @@ def input_fn():
     """
     Input function for training data.
     """
-    # Loading and preprocessing the MovieLens dataset
+    # Loading and preprocessing the 100k MovieLens dataset
     ratings = tfds.load("movielens/100k-ratings", split="train[:80%]")
 
-    # or loading and preprocessing the MovieLens dataset
+    # or loading and preprocessing the 1M MovieLens dataset
     # ratings = tfds.load("movielens/1m-ratings", split="train[:80%]")
 
     def _label_trans(y):
