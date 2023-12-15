@@ -102,8 +102,8 @@ To run:
 3. **Configuration**: Modify the `decompose_config.json` file in the `config` directory as needed to tweak model parameters, feature processing, and other settings.
 
 4. **Execution**: Run the script using the following command from the root directory of the project:
-'''
+```
 python [root path to project]/zoo/decomposition_estimator.py
-'''
+```
 
 
