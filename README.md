@@ -7,14 +7,11 @@ Our research introduces the **Dual Feature Decomposition (DFD)** approach to tac
 
 ## Key Features
 - **Dual Feature Decomposition**: Breaks down features into atomic (related to bias and unobserved factors) and side (observable without bias) features.
-- **Neural Network Mappings**: Designed to minimize the influence of the atomic space on side representations.
-- **Vertical Projection**: Applied to further reduce bias in recommendations.
+- **Optimized Neural Network Mappings**: Designed to minimize the influence of the atomic space on side representations.
+- **Vertical Projections**: Applied to further reduce bias in recommendations.
 
 ## Background
 The endogeneity problem suggests that unseen factors might influence a user's preference. For instance, a user might prefer a movie due to a specific actor, even if they haven't interacted with it. Our model aims to capture such nuances to provide a more holistic recommendation.
-
-## Related Work
-We delve into related research, focusing on advancements in causal embeddings and representation disentanglement, to provide context and highlight the novelty of our approach.
 
 ## Code Structure and Usage
 Self-supervised data augmentation, self-supervised contrast, and endogenous structure modules are abstracted as `sub_task`. All `sub_task` inherit from `sub_task_base`. The `sub_task` is similar to a Keras layer, but the difference is that `sub_task_base` explicitly defines the loss interface and output. The advantage of `sub_task` is that each task can be tested and evaluated independently.
