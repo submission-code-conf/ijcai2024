@@ -92,7 +92,7 @@ sub_task_names = ["query_ssl_augment", "item_ssl_augment", "ssl", "ltr"]
 
 To run:
 
-1. **Setup**: Ensure that all required packages are installed. This includes TensorFlow, TensorFlow Datasets, and any other dependencies your project requires.
+1. **Setup**: Ensure that all required packages are installed. This includes tensorflow, tensorflow_datasets, and any other dependencies your project requires.
 
 2. **Data Preparation**: The script uses the Movielens 100K (and 1M) dataset, which will be automatically downloaded and processed when you run the script.
 
