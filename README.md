@@ -1,4 +1,4 @@
-# Causal Embedding with Dual Feature Decomposition for Addressing Exposure Bias in Recommender Systems
+# Causal Embedding with Dual Feature Decomposition for Mitigating Exposure Bias in Recommender Systems
 
 ## Overview
 Recommender systems often grapple with the challenge of exposure bias. This phenomenon arises when users predominantly interact with a narrow set of items (head items), leading to the misconception that non-exposed items (tail items) are of no interest to them. Existing solutions, such as inverse propensity scoring and causal embeddings, sometimes fail to delve deep into the latent relationships between users, items, and interactions, a challenge known as the endogeneity problem.
